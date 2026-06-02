@@ -1,24 +1,64 @@
-Law of Commercial Register Chatbot
+# Commercial Register Law Chatbot
 
-A Streamlit-based chatbot powered by Google Gemini 1.5 that answers questions about the Law of Commercial Register. The app maintains conversation history, provides AI-generated responses, and uses environment variables for secure API key management.
+A conversational AI assistant that answers questions about the Law of Commercial Register, powered by Google Gemini 1.5 Flash.
 
-Features
+## Overview
 
-Interactive chat interface
+This application provides an interactive chat interface for querying Commercial Register regulations. Users can ask natural language questions and receive accurate, context-aware legal guidance based on the law's provisions.
 
-AI-powered legal guidance (informational purposes only)
+## Features
 
-Conversation memory
+- Natural language Q&A about Commercial Register law
+- Powered by Google Gemini 1.5 Flash
+- Clean conversational Streamlit interface
+- Secure API key management via environment variables
 
-Secure API key handling
+## Tech Stack
 
-Installation
-git clone <repo-url>
-cd <repo-folder>
-pip install streamlit google-generativeai
-export GOOGLE_API_KEY="YOUR_API_KEY"  # Windows: setx GOOGLE_API_KEY "YOUR_API_KEY"
-streamlit run app.py
+| Component | Technology |
+|-----------|-----------|
+| Language | Python |
+| LLM | Google Gemini 1.5 Flash |
+| UI | Streamlit |
+| SDK | google-generativeai |
 
-Usage
+## Getting Started
 
-Enter your question in the chat box, and the AI will respond while storing the conversation for context.
+### Prerequisites
+
+- Python 3.8+
+- Google AI API key — [Get one here](https://aistudio.google.com)
+
+### Installation
+
+```bash
+git clone https://github.com/DAleid/Chatbot--Gemini-API-.git
+cd Chatbot--Gemini-API-
+pip install google-generativeai streamlit
+```
+
+### Configuration
+
+```bash
+# Linux / macOS
+export GOOGLE_API_KEY=your_api_key_here
+
+# Windows
+set GOOGLE_API_KEY=your_api_key_here
+```
+
+### Run
+
+```bash
+streamlit run chatbot_GIMINI.py
+```
+
+Open `http://localhost:8501` in your browser.
+
+## Usage
+
+Type your question in the chat input and press Enter. The assistant responds with relevant information about Commercial Register law in a conversational format.
+
+## License
+
+MIT License
